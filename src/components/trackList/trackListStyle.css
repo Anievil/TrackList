@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.treckList{
+    width: 95vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.trackListLi{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+.trackListLi:first-child, .trackListLi:first-child > p{
+    justify-content: space-around; 
+    flex-basis: 20%;
+    text-align: end;
+    width: 80%; 
+}
+
+.trackListP{
+    flex-basis: 16.6%;
+    text-align: center;
+}
+
+.trackListImg{
+    width: auto;
+    height: auto;
+}
+
+.trackListLi:nth-child(2n){
+    background-color: #CCDFF0;
+}
+
+.trackListButton{
+    background-image: url('../icons/open.svg');
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+.closeIcon{
+    background-image: url('../icons/close.svg');
+    transform: rotate(180deg);
+}
+
+.visibilityHidden{
+    height: 0px;
+    visibility: hidden;
+}
+
+.trackInfo{
+    width: 600px;
+    margin: 0 14vw;
+}
+
+.trackInfoName{
+    display: flex;
+    align-items: center;
+    color: #454948;
+    margin-bottom: -15px 
+}
+
+.trackInfoNameImg{
+    margin-left: 15px;
+    height: 25px;
+    width: 25px;
+}
+
+.trackInfoBlock{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trackInfoAlbum, .trackInfoTrack{
+    line-height: 5px;
+}
+
+.load{
+    display: flex;
+    justify-content: center;
+}
