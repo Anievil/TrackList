@@ -18,7 +18,7 @@ class TrackList extends React.Component{
         })
         .then(function(json) {
                 return json
-        })                                                                                              //чтения данных из 
+        })                                                                                              //чтения данных из json файла 
         .catch(function(ex) {
             console.log('parsing failed', ex)
         })
