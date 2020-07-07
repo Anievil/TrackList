@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+/* ----------блок для списка песен------------ */
 .treckList{
     width: 95vw;
     font-family: 'Open Sans', sans-serif;
@@ -21,6 +21,10 @@
     width: 80%; 
 }
 
+.trackListLi:nth-child(2n){
+    background-color: #CCDFF0;
+}
+/* ----------стили для текста и изображений------------ */
 .trackListP{
     flex-basis: 16.6%;
     text-align: center;
@@ -31,10 +35,7 @@
     height: auto;
 }
 
-.trackListLi:nth-child(2n){
-    background-color: #CCDFF0;
-}
-
+/* ----------Кнопка для закрытия и открытия аккордеона------------ */
 .trackListButton{
     background-image: url('../icons/open.svg');
     width: 50px;
@@ -51,11 +52,13 @@
     transform: rotate(180deg);
 }
 
+/* ----------Закрытие аккордеона------------ */
 .visibilityHidden{
     height: 0px;
     visibility: hidden;
 }
 
+/* -----------блок с детальная информация о песне----------- */
 .trackInfo{
     width: 600px;
     margin: 0 14vw;
@@ -83,6 +86,7 @@
     line-height: 5px;
 }
 
+/* -----------блок со спинер----------- */
 .load{
     display: flex;
     justify-content: center;
